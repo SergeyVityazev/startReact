@@ -8,7 +8,9 @@
     "test": "jest",
     "lint": "npx eslint ./src/*.jsx & npx eslint ./src/*.js",
     "lint:fix": "npx eslint ./src/*.js --fix & npx eslint ./src/*.jsx --fix",
-    "prettier": "prettier --single-quote --use-tabs --trailing-comma es5 --write \"src/**/*.js\""
+    "prettier": "prettier --single-quote --use-tabs --trailing-comma es5 --write \"src/**/*.js\"",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
   },
   "homepage": "https://github.com/SergeyVityazev/startReact#readme",
   "dependencies": {
+    "@storybook/addon-knobs": "^5.3.19",
     "@types/jest": "^25.2.3",
     "@typescript-eslint/parser": "^2.31.0",
     "babel-core": "^6.26.3",
@@ -40,6 +43,10 @@
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
     "@babel/preset-typescript": "^7.9.0",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/react": "^5.3.19",
     "@typescript-eslint/eslint-plugin": "^2.31.0",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.5.3",
