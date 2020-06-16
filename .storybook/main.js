@@ -1,14 +1,17 @@
 const path = require('path')
 
 module.exports = {
-  stories: ['../stories/**/*.stories.tsx'],
-  addons: ['@storybook/addon-actions', '@storybook/addon-links'],
-  webpackFinal: (config) => {
+  addons: ['@storybook/addon-jest/register'],
+  stories: ['../src/stories/**/*.stories.tsx'],
+  webpackFinal: async (config) => {
     config.module.rules.push({
-      test: /\.tsx?$/,
-      include: path.resolve(__dirname, '../src'),
-      use: [require.resolve('babel-loader')],
+      test: /\.(ts|tsx)$/,
+      loader: require.resolve('babel-loader'),
+      options: {
+        presets: [['react-app', { flow: false, typescript: true }]],
+      },
     })
+    config.resolve.extensions.push('.ts', '.tsx')
     return config
   },
 }
