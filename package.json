@@ -6,8 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --hot",
     "test": "jest",
-    "lint": "npx eslint ./src/*.jsx & npx eslint ./src/*.js & npx eslint ./stories/*.tsx",
-    "lint:fix": "npx eslint ./src/*.js --fix & npx eslint ./src/*.jsx & npx eslint ./stories/*.tsx --fix",
+    "lint": "npx eslint ./src/*.jsx & npx eslint ./src/*.js",
+    "lint:fix": "npx eslint ./src/*.js --fix & npx eslint ./src/*.jsx --fix",
     "prettier": "prettier --single-quote --use-tabs --trailing-comma es5 --write \"src/**/*.js\"",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
@@ -36,10 +36,10 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-sonarjs": "^0.5.0",
     "react": "^16.13.1",
-    "react-docgen-typescript-loader": "^3.7.2",
+
     "react-dom": "^16.13.1",
-    "react-test-renderer": "^16.13.1",
-    "storybook-addon-react-docgen": "^1.2.32",
+    
+   
     "typescript": "^3.8.3",
     "webpack-dev-server": "^3.10.3"
   },

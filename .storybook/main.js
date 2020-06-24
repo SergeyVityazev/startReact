@@ -2,7 +2,7 @@ const path = require('path')
 
 module.exports = {
   addons: ['@storybook/addon-jest/register'],
-  stories: ['../src/stories/**/*.stories.tsx'],
+  stories: ['../src/stories/*.stories.tsx'],
   webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.(ts|tsx)$/,

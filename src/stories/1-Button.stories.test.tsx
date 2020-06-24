@@ -1,8 +1,7 @@
-import  AbountMe  from './1-Button.stories';
+import AbountMe from "./AboutMe"
 
 test('adds name + number to equal String', () => {
-    const hellotest = () => new AbountMe ("vasya",15);
-    
-    expect(hellotest.render()).toBe(String)
-})
+  const hellotest = () => <AboutMe myname={'sergey'} old={33} />
 
+  expect(hellotest.render()).toBe(String)
+})
