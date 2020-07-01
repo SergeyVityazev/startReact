@@ -2,9 +2,9 @@
   "name": "startreact",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/index.js",
+  "main": "./src/index.tsx",
   "scripts": {
-    "start": "webpack-dev-server --mode devolopment --open --hot",
+    "start": "webpack-dev-server --mode development --open --hot",
     "build": "npx webpack --mode development",
     "test": "npx jest",
     "lint": "npx eslint ./src/*.jsx & npx eslint ./src/*.js",
@@ -28,6 +28,7 @@
   "homepage": "https://github.com/SergeyVityazev/startReact#readme",
   "dependencies": {
     "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/react-dom": "^16.9.8",
     "loki": "^0.22.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
