@@ -1,10 +1,6 @@
 import React from 'react'
-import AboutMe from './AboutMe'
 import { shallow, render } from 'enzyme'
-import * as enzyme from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
-
-enzyme.configure({ adapter: new Adapter() })
+import AboutMe from './AboutMe'
 
 describe('My name and old', () => {
   it('adds name + number to equal String', () => {

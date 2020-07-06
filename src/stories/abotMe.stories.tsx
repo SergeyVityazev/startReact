@@ -1,7 +1,7 @@
 import React from 'react'
 import { withKnobs, number } from '@storybook/addon-knobs'
 
-import AboutMe from './AboutMe'
+import AboutMe from '../AboutMe'
 
 export default {
   title: 'startStories',
